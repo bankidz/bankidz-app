@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Bankidz",
+    "slug": "bankk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.gnu5213.bankk"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "bundleIdentifier": "com.gnu5213.bankk",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.gnu5213.bankk",
+      "versionCode": 1
+    }
+
+  }
+}
