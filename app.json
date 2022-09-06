@@ -1,42 +1,77 @@
 {
   "expo": {
-    "name": "Bankidz",
-    "slug": "bankk",
+    "name": "bankidztest",
+    "slug": "bankidztest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "platforms": ["android"],
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
+    "scheme": "bankidz",
+    "host": "/",
+
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-    
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.gnu5213.bankk"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "ios": {
-      "bundleIdentifier": "com.gnu5213.bankk",
+      "bundleIdentifier": "com.gnu5213.bankidztest",
       "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
-      "package": "com.gnu5213.bankk",
-      "versionCode": 1
-    }
+      "package": "com.gnu5213.bankidztest",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "NOTIFICATION"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true
+    },
+    "NOTIFICATION": {
+      "icon": "./assets/icon.png",
+      "color": "#59ff59"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/assets/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "message":{
+      "to": "ExponentPushToken[EQBviQMfJm_1riRkM0KdjP]",
+      "body": "For the test",
+      "message": "\\\"ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]\\\" is not a registered push notification recipient",
+      
 
+      "data": [
+        {
+          "status": "error",
+          "message": "\\\"ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]\\\" is not a registered push notification recipient",
+          "details": {
+            "error": "DeviceNotRegistered"
+          }
+        },
+        {
+          "status": "ok",
+          "id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+        }
+      ]
+    }
   }
 }

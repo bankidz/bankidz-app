@@ -1,0 +1,12 @@
+import React from 'react';
+import { Text } from 'react-native';
+ 
+class Home extends React.Component {  
+ static navigationOptions = {  
+ title: ‘Home’,  
+ };  
+ render() {  
+ return Hello from Home!;  
+ }  
+ }  
+ export default Home;  
