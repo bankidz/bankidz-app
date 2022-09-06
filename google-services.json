@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "87401107547",
+    "project_id": "bankidfcm",
+    "storage_bucket": "bankidfcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87401107547:android:5192e961ce477c23556f7e",
+        "android_client_info": {
+          "package_name": "com.gnu5213.bankidztest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87401107547-tv8aq6f9c1saaeeqimjejtjog1rq8d00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhopDMkCGS_wKiarZKJs8Hm_X-8-PksoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87401107547-tv8aq6f9c1saaeeqimjejtjog1rq8d00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
