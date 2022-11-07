@@ -1,38 +1,25 @@
 import React from 'react';
 import {
-    useEffect,
-    useState,
     useRef,
-    Component
 } from 'react';
 
-import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import WebviewContainer from './WebviewContainer';
 
 import {
-    Alert,
-    BackHandler,
     SafeAreaView,
-    ScrollView,
     StatusBar,
     StyleSheet,
     Share,
-    Text,
     View,
-    navstate,
-    Button,
-    Vibration,
     Platform,
-    navigation,
-    ToastAndroid 
 } from 'react-native';
 
 import { WebView } from 'react-native-webview';
 import Constants from "expo-constants";
 import * as Notifications from "expo-notifications";
 import * as Linking from 'expo-linking';
-import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
-import { NavigationContainer, Link } from '@react-navigation/native';
+import { NavigationContainer} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -113,9 +100,9 @@ const App = () => {
     console.log("handleEndLoading");
     /** rn에서 웹뷰로 정보를 보내는 메소드 */
     const expotoken = await registerForPushNotificationsAsync();
-    console.log("제대로 들어왔나?", expotoken)
+    //console.log("제대로 들어왔나?", expotoken)
     webviewRef.postMessage(expotoken);// 이게 여기서 돌아가게하면 
-    console.log("이게나중인데")
+    //console.log("이게나중인데")
 
   };
 
@@ -149,8 +136,8 @@ const App = () => {
 
         <View style={styles.root}>
             <View style={styles.browser}>
-            <SafeAreaView style={{ flex: 1 , backgroundColor: '#FAFAFC' }}>
-                        <StatusBar barStyle="dark-content" backgroundColor={'#FAFAFC'} /*translucent={false}*/ />
+            <SafeAreaView style={{ flex: 1 , backgroundColor: 'white' }}>
+                        <StatusBar barStyle="dark-content" backgroundColor={'white'} /*translucent={false}*/ />
                     
                         <WebviewContainer
                           injectedJavaScript={INJECTED_JAVASCRIPT}

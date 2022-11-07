@@ -1,20 +1,21 @@
 {
   "expo": {
-    "name": "bankidztest",
-    "slug": "bankidztest",
+    "name": "뱅키즈",
+    "slug": "bankidzapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "platforms": ["android"],
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain",
+      "backgroundColor": "#FFC52F"
     },
     "scheme": "bankidz",
-    "host": "/",
-
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -22,12 +23,12 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.gnu5213.bankidztest",
+      "bundleIdentifier": "com.bankidz.bankidzapp",
       "buildNumber": "1.0.0",
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
-      "package": "com.gnu5213.bankidztest",
+      "package": "com.bankidz.bankidzapp",
       "versionCode": 1,
       "permissions": [
         "CAMERA",
@@ -36,10 +37,6 @@
       ],
       "googleServicesFile": "./google-services.json",
       "useNextNotificationsApi": true
-    },
-    "NOTIFICATION": {
-      "icon": "./assets/icon.png",
-      "color": "#59ff59"
     },
     "plugins": [
       [
@@ -53,25 +50,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "message":{
-      "to": "ExponentPushToken[EQBviQMfJm_1riRkM0KdjP]",
-      "body": "For the test",
-      "message": "\\\"ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]\\\" is not a registered push notification recipient",
-      
-
-      "data": [
-        {
-          "status": "error",
-          "message": "\\\"ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]\\\" is not a registered push notification recipient",
-          "details": {
-            "error": "DeviceNotRegistered"
-          }
-        },
-        {
-          "status": "ok",
-          "id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
-        }
-      ]
+    "extra": {
+      "eas": {
+        "projectId": "0a00f085-8a26-4ddf-a803-83c9dd310937"
+      }
     }
   }
 }
