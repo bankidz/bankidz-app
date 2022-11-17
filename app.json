@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "뱅키즈",
+    "slug": "bankidzapp",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFC52F"
+    },
+    "scheme": "bankidz",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "jsEngine":"hermes",
+
+    "ios": {
+      "bundleIdentifier": "com.bankidz.bankidzapp",
+      "buildNumber": "1.0.1",
+      "supportsTablet": false,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "jsEngine": "jsc"
+    },
+    "android": {
+      "package": "com.bankidz.bankidzapp",
+      "versionCode": 2,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "NOTIFICATION"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true
+
+    },
+    
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/assets/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0a00f085-8a26-4ddf-a803-83c9dd310937"
+      }
+    }
+  }
+}
